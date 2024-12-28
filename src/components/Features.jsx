@@ -20,9 +20,9 @@ const Features = () => {
 
       <h2 className="text-3xl font-bold text-center mt-16 mb-8">Meet the Founder</h2>
       <div className="text-center bg-white shadow-lg p-6 rounded-lg mx-auto w-1/2">
-        <h3 className="text-2xl font-bold">Victor Adhikary</h3>
+        <h3 className="text-2xl font-bold">Harshit Pandey</h3>
         <p className="mt-2 text-gray-600">
-          Founder of Founders Gang. Passionate about coding and creating impactful solutions.
+          Founder of CreoVibe. Passionate about coding and creating impactful solutions.
         </p>
       </div>
     </section>
