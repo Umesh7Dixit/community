@@ -122,8 +122,23 @@
 
 
 import image from '../assets/image.png';
+import { useNavigate } from 'react-router-dom'; 
+// import CommunityLanding from '../components/CommunityLanding';
 
 const Hero = () => {
+
+
+  const navigate = useNavigate();
+
+  // const handleClick = () => {
+  //   navigate(<CommunityLanding/>); // Replace with your desired route
+  // };
+  const handleClick = () => {
+    navigate('/community-landing'); // Replace with your desired route
+  };
+
+
+
   return (
     <section
       id="hero"
@@ -152,7 +167,7 @@ const Hero = () => {
           entrepreneurs, and innovators.
         </p>
 
-        <button className="group relative inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-red-500 rounded-full overflow-hidden transition-all duration-300 hover:bg-red-600 focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:outline-none">
+        <button onClick={handleClick} className="group relative inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-red-500 rounded-full overflow-hidden transition-all duration-300 hover:bg-red-600 focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:outline-none">
           <span className="relative z-10 flex items-center">
             <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-200">→</span>
             Join CREOVIBE Community
