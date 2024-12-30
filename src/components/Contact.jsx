@@ -1,11 +1,36 @@
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-red-500 text-white py-20">
-      <h2 className="text-3xl font-bold text-center">Contact Us</h2>
-      <p className="text-center mt-4">Email: Harshit@CreoVibe.com</p>
-      <p className="text-center">Address: Second Floor, F-329,Shastri Nagar, New Delhi</p>
-    </section>
+    // <section id="contact" className="bg-gray-700 text-white py-20">
+        <section id="contact" className="py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold">Contact Us</h2>
+          <form className="mt-8 space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full p-3 border rounded focus:outline-none focus:border-blue-500"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full p-3 border rounded focus:outline-none focus:border-blue-500"
+            />
+            <textarea
+              placeholder="Your Message"
+              className="w-full p-3 border rounded focus:outline-none focus:border-blue-500"
+              rows="4"
+            ></textarea>
+            <button
+              type="submit"
+              className="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    // </section>
   );
 };
 
