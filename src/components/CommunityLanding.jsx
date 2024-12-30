@@ -510,7 +510,13 @@ const CommunityLanding = () => {
                 collaborate and grow.
               </p>
               <button className="bg-red-500 text-white px-8 py-3 rounded-md hover:bg-red-600 transition-all">
+                
+              <a
+    href="https://api.whatsapp.com/send/?phone=918879355057&text&type=phone_number&app_absent=0"
+    className="inline-block mt-6 bg-red-500 text-white py-3 px-6 rounded hover:bg-red-600 transition"
+  >
                 JOIN NOW
+                </a>
               </button>
             </div>
           </div>
