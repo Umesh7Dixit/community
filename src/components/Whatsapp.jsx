@@ -12,7 +12,7 @@ const Whatsapp = () => {
     />
   </div>
   <h1 className="text-3xl font-bold text-red-600 mt-4">
-    JOIN INDIA S LARGEST BUSINESS COMMUNITY ON WHATSAPP
+    JOIN INDIA&apos;S LARGEST BUSINESS COMMUNITY ON WHATSAPP
   </h1>
   <p className="text-gray-700 mt-4 leading-6">
     Connect with like-minded people in a vibrant community! Join us

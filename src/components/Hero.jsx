@@ -130,11 +130,9 @@ const Hero = () => {
 
   const navigate = useNavigate();
 
-  // const handleClick = () => {
-  //   navigate(<CommunityLanding/>); // Replace with your desired route
-  // };
+  
   const handleClick = () => {
-    navigate('/community-landing'); // Replace with your desired route
+    navigate('/community-landing');  
   };
 
 
@@ -159,18 +157,17 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-          Connect With Like-Minded People!
+          Connect With Like-Minded People
         </h1>
         
         <p className="text-lg md:text-xl text-gray-200 mb-12 max-w-2xl mx-auto">
-          A vibrant business community connecting ambitious youngsters, 
-          entrepreneurs, and innovators.
+        A dynamic business community fostering connections among ambitious entrepreneurs, innovators, and thought leaders from top institutions like IIT and IIM.
         </p>
 
         <button onClick={handleClick} className="group relative inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-red-500 rounded-full overflow-hidden transition-all duration-300 hover:bg-red-600 focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:outline-none">
           <span className="relative z-10 flex items-center">
             <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-200">→</span>
-            Join CREOVIBE Community
+            Join 10Xclub 
           </span>
         </button>
       </div>

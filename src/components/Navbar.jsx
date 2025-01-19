@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav className="bg-gray-700 text-white p-4 sticky top-0 z-50 w-full flex justify-between items-center gap-1 lg:px-16 px-6">
       {/* Logo */}
       <div className="flex items-center">
-        <h1 className="text-white md:text-4xl text-3xl font-bold font-rubik">CREOVIBE</h1>
+        <h1 className="text-white md:text-4xl text-3xl font-bold font-rubik">10Xclub</h1>
       </div>
 
       {/* Desktop Navigation */}
