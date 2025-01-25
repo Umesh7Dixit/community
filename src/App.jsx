@@ -48,7 +48,7 @@ const App = () => {
               <Hero />
               <Featires0/>
               <Features />
-              <CommunityStats/>
+              {/* <CommunityStats/> */}
               <KPISection/>
               <Whatsapp />
               <Contact />

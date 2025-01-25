@@ -91,7 +91,9 @@ const WhatsAppCommunity = () => {
               </p>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=918879355057&text&type=phone_number&app_absent=0"
+                // href="https://api.whatsapp.com/send/?phone=918879355057&text&type=phone_number&app_absent=0"
+                   href="https://api.whatsapp.com/send/?phone=919119938268&text&type=phone_number&app_absent=0"
+                // href="https://api.whatsapp.com/send/?phone=919119938268&text=Harshit+Pandey&type=phone_number&app_absent=0"
                 className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white text-lg font-semibold py-4 px-8 rounded-full transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl"
               >
                 <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500" />
