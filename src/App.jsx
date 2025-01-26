@@ -11,7 +11,7 @@ import CommunityLanding from './components/CommunityLanding'; // Import Communit
 import KPISection from './components/KPISection';
 import EventsSection from './components/EventsSection';
 import FounderSection from './components/FounderSection';
-import Payment from './components/payment';
+import PaymentOrder from './components/PaymentOrder';
 import GenZEntrepreneurPlatform from './components/GenZEntrepreneurPlatform';
 
 const App = () => {
