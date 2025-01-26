@@ -333,8 +333,7 @@ const KPISection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          Our vibrant community empowers entrepreneurs, startups, and founders worldwide.
-        </motion.h1>
+Our vibrant community dreams to empowers entrepreneurs, startups, and founders worldwide with below targets        </motion.h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <KPICard 
