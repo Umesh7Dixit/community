@@ -11,6 +11,8 @@ import CommunityLanding from './components/CommunityLanding'; // Import Communit
 import KPISection from './components/KPISection';
 import EventsSection from './components/EventsSection';
 import FounderSection from './components/FounderSection';
+import Payment from './components/payment';
+import GenZEntrepreneurPlatform from './components/GenZEntrepreneurPlatform';
 
 const App = () => {
   return (
@@ -22,6 +24,7 @@ const App = () => {
               <Navbar />
               <Hero />
               <Featires0/>
+              <GenZEntrepreneurPlatform/>
               {/* <Features /> */}
               
                     <EventsSection />
@@ -34,6 +37,7 @@ const App = () => {
             </> 
           }/> 
           <Route path="/community-landing" element={<CommunityLanding />} />
+          <Route path="/payment" element={<Payment />} />
         </Routes>
       </div>
     </Router>
