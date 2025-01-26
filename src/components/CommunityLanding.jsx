@@ -172,6 +172,7 @@ const CommunityLanding = () => {
             </motion.p>
 
             <motion.a 
+            target="_blank"
               href="https://api.whatsapp.com/send/?phone=919119938268&text&type=phone_number&app_absent=0"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

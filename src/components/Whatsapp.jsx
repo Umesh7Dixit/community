@@ -82,6 +82,7 @@ const Whatsapp = () => {
         </motion.p>
 
         <motion.a
+        target="_blank"
           href="https://api.whatsapp.com/send/?phone=919119938268&text&type=phone_number&app_absent=0"
           className="inline-block mt-8 bg-green-500 text-white py-3 px-8 rounded-lg 
                      hover:bg-green-600 transition-all duration-300 
