@@ -629,8 +629,136 @@
 
 
 
+
+
+
+
+
+
+
+
+// import  { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import { 
+//   Globe, 
+//   Rocket, 
+//   Award 
+// } from 'lucide-react';
+
+// const Hero = () => {
+//   const navigate = useNavigate();
+//   const [activeSection, setActiveSection] = useState(null);
+
+//   const communityHighlights = [
+//     {
+//       icon: Rocket,
+//       title: "Startup Ecosystem",
+//       description: "A launchpad for innovative entrepreneurs to transform ideas into global ventures.",
+//       details: [
+//         "250+ Successful Startups",
+//         "Multi-industry Innovation",
+//         "Seed Funding Connections"
+//       ],
+//       color: "from-blue-500 to-blue-700"
+//     },
+//     {
+//       icon: Globe,
+//       title: "Global Network",
+//       description: "Connecting ambitious minds across continents and industries.",
+//       details: [
+//         "5000+ Active Entrepreneurs",
+//         "International Mentorship",
+//         "Cross-border Collaborations"
+//       ],
+//       color: "from-green-500 to-green-700"
+//     },
+//     {
+//       icon: Award,
+//       title: "Growth Accelerator",
+//       description: "Transforming potential into extraordinary entrepreneurial success.",
+//       details: [
+//         "50+ Industry Verticals",
+//         "Advanced Skill Workshops",
+//         "Strategic Partnerships"
+//       ],
+//       color: "from-purple-500 to-purple-700"
+//     }
+//   ];
+
+//   const handleClick = () => {
+//     navigate('/community-landing');
+//   };
+
+//   return (
+//     <div id='hero'  className="relative min-h-screen w-full flex items-center justify-center px-4 md:px-8 py-16 bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden">
+//       <div className="max-w-6xl mx-auto text-center">
+//         <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+//           Unleash Your Entrepreneurial Potential
+//         </h1>
+        
+//         <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+//           A transformative platform connecting ambitious entrepreneurs, providing mentorship, 
+//           networking, and resources to turn innovative ideas into successful ventures.
+//         </p>
+
+//         <button 
+//           onClick={handleClick} 
+//           className="group relative inline-flex items-center px-10 py-4 text-lg font-bold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-all duration-300 mb-16"
+//         >
+//           Join 10X Entrepreneurs Club
+//         </button>
+
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+//           {communityHighlights.map((section, index) => (
+//             <div 
+//               key={index}
+//               className={`
+//                 relative p-6 rounded-2xl shadow-lg transition-all duration-300 group
+//                 ${activeSection === index 
+//                   ? 'ring-4 ring-blue-400 scale-105' 
+//                   : 'hover:shadow-xl'}
+//                 bg-gradient-to-br ${section.color} text-white
+//               `}
+//               onMouseEnter={() => setActiveSection(index)}
+//               onMouseLeave={() => setActiveSection(null)}
+//             >
+//               <div className="flex justify-center mb-4">
+//                 <div className="p-4 rounded-full bg-white/20">
+//                   <section.icon className="w-12 h-12 text-white" />
+//                 </div>
+//               </div>
+              
+//               <h3 className="text-2xl font-bold mb-2 text-center">
+//                 {section.title}
+//               </h3>
+              
+//               <p className="text-sm text-white/80 text-center mb-4">
+//                 {section.description}
+//               </p>
+              
+//               {activeSection === index && (
+//                 <ul className="space-y-2 mt-4 text-center text-sm">
+//                   {section.details.map((detail, detailIndex) => (
+//                     <li key={detailIndex} className="text-white/90">
+//                       {detail}
+//                     </li>
+//                   ))}
+//                 </ul>
+//               )}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
+
+
 import  { useState } from 'react';
-// import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { 
   Globe, 
@@ -687,18 +815,21 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
           Unleash Your Entrepreneurial Potential
+          <span className="block text-base font-medium text-blue-700 mt-3">
+            Powered by IIT, IIM Alumni Expertise
+          </span>
         </h1>
         
         <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-          A transformative platform connecting ambitious entrepreneurs, providing mentorship, 
-          networking, and resources to turn innovative ideas into successful ventures.
+          A transformative platform connecting ambitious entrepreneurs, leveraging insights from top-tier IIT and IIM alumni, 
+          providing mentorship, networking, and resources to turn innovative ideas into successful ventures.
         </p>
 
         <button 
           onClick={handleClick} 
           className="group relative inline-flex items-center px-10 py-4 text-lg font-bold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-all duration-300 mb-16"
         >
-          Join 10X Entrepreneurs Club
+          Join CREOVIBE Entrepreneurs Club
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

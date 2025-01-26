@@ -92,41 +92,130 @@
 
 
 
-import  { useState } from 'react';
+// import  { useState } from 'react';
+// import { motion } from 'framer-motion';
+// import { Rocket, TrendingUp, Globe, Target } from 'lucide-react';
+
+// const GenZEntrepreneurPlatform = () => {
+//   const [selectedChallenge, setSelectedChallenge] = useState(null);
+
+//   const challenges = [
+//     {
+//       id: 1,
+//       icon: Rocket,
+//       title: "Startup Accelerator",
+//       description: "Transform innovative ideas into scalable businesses",
+//       color: "from-purple-500 to-pink-500"
+//     },
+//     {
+//       id: 2,
+//       icon: TrendingUp,
+//       title: "Digital Monetization",
+//       description: "Create multiple online income streams",
+//       color: "from-blue-500 to-teal-500"
+//     },
+//     {
+//       id: 3,
+//       icon: Globe,
+//       title: "Global Impact",
+//       description: "Design solutions for world-changing problems",
+//       color: "from-green-500 to-emerald-500"
+//     },
+//     {
+//       id: 4,
+//       icon: Target,
+//       title: "Growth Hacking",
+//       description: "Master marketing and rapid business expansion",
+//       color: "from-orange-500 to-red-500"
+//     }
+//   ];
+
+//   return (
+//     <div className="w-full bg-white py-16">
+//       <div className="w-[90%] mx-auto">
+//         <h1 className="text-5xl font-bold text-center mb-12 text-gray-900">
+//           GenZ Entrepreneurship Hub
+//         </h1>
+
+//         <div className="grid md:grid-cols-4 gap-6">
+//           {challenges.map((challenge) => (
+//             <motion.div
+//               key={challenge.id}
+//               whileHover={{ scale: 1.05 }}
+//               whileTap={{ scale: 0.95 }}
+//               onClick={() => setSelectedChallenge(challenge)}
+//               className={`bg-gradient-to-br ${challenge.color} rounded-3xl p-6 text-white cursor-pointer shadow-2xl`}
+//             >
+//               <div className="flex items-center mb-4">
+//                 <challenge.icon className="mr-4 h-12 w-12" />
+//                 <h3 className="text-2xl font-bold">{challenge.title}</h3>
+//               </div>
+//               <p>{challenge.description}</p>
+//             </motion.div>
+//           ))}
+//         </div>
+//       </div>
+
+//       {selectedChallenge && (
+//         <motion.div 
+//           initial={{ opacity: 0, scale: 0.8 }}
+//           animate={{ opacity: 1, scale: 1 }}
+//           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"
+//           onClick={() => setSelectedChallenge(null)}
+//         >
+//           <motion.div 
+//             className={`bg-gradient-to-br ${selectedChallenge.color} rounded-3xl p-8 max-w-md w-full`}
+//             initial={{ y: 50, opacity: 0 }}
+//             animate={{ y: 0, opacity: 1 }}
+//           >
+//             <h2 className="text-4xl font-bold mb-4">{selectedChallenge.title}</h2>
+//             <p className="text-xl mb-6">{selectedChallenge.description}</p>
+//           </motion.div>
+//         </motion.div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default GenZEntrepreneurPlatform;
+
+
+
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, TrendingUp, Globe, Target } from 'lucide-react';
+import { Network, Award, Zap, Users, Briefcase } from 'lucide-react';
 
-const GenZEntrepreneurPlatform = () => {
-  const [selectedChallenge, setSelectedChallenge] = useState(null);
+const EntrepreneurPlatform = () => {
+  const [selectedOpportunity, setSelectedOpportunity] = useState(null);
 
-  const challenges = [
+  const opportunities = [
     {
       id: 1,
-      icon: Rocket,
-      title: "Startup Accelerator",
-      description: "Transform innovative ideas into scalable businesses",
-      color: "from-purple-500 to-pink-500"
+      icon: Network,
+      title: "Founder Connections",
+      description: "Build powerful networks with global entrepreneurs and industry leaders",
+      color: "from-indigo-500 to-purple-600"
     },
     {
       id: 2,
-      icon: TrendingUp,
-      title: "Digital Monetization",
-      description: "Create multiple online income streams",
-      color: "from-blue-500 to-teal-500"
+      icon: Award,
+      title: "Startup Mentorship",
+      description: "Get personalized guidance from successful founders and investors",
+      color: "from-green-500 to-emerald-600"
     },
     {
       id: 3,
-      icon: Globe,
-      title: "Global Impact",
-      description: "Design solutions for world-changing problems",
-      color: "from-green-500 to-emerald-500"
+      icon: Zap,
+      title: "Rapid Scaling",
+      description: "Access resources and strategies to accelerate your business growth",
+      color: "from-orange-500 to-red-600"
     },
     {
       id: 4,
-      icon: Target,
-      title: "Growth Hacking",
-      description: "Master marketing and rapid business expansion",
-      color: "from-orange-500 to-red-500"
+      icon: Users,
+      title: "Collaborative Ecosystem",
+      description: "Join a supportive community of innovative entrepreneurs",
+      color: "from-blue-500 to-cyan-600"
     }
   ];
 
@@ -134,42 +223,41 @@ const GenZEntrepreneurPlatform = () => {
     <div className="w-full bg-white py-16">
       <div className="w-[90%] mx-auto">
         <h1 className="text-5xl font-bold text-center mb-12 text-gray-900">
-          GenZ Entrepreneurship Hub
-        </h1>
+        GenZ Entrepreneurship Hub        </h1>
 
         <div className="grid md:grid-cols-4 gap-6">
-          {challenges.map((challenge) => (
+          {opportunities.map((opportunity) => (
             <motion.div
-              key={challenge.id}
+              key={opportunity.id}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => setSelectedChallenge(challenge)}
-              className={`bg-gradient-to-br ${challenge.color} rounded-3xl p-6 text-white cursor-pointer shadow-2xl`}
+              onClick={() => setSelectedOpportunity(opportunity)}
+              className={`bg-gradient-to-br ${opportunity.color} rounded-3xl p-6 text-white cursor-pointer shadow-2xl`}
             >
               <div className="flex items-center mb-4">
-                <challenge.icon className="mr-4 h-12 w-12" />
-                <h3 className="text-2xl font-bold">{challenge.title}</h3>
+                <opportunity.icon className="mr-4 h-12 w-12" />
+                <h3 className="text-2xl font-bold">{opportunity.title}</h3>
               </div>
-              <p>{challenge.description}</p>
+              <p>{opportunity.description}</p>
             </motion.div>
           ))}
         </div>
       </div>
 
-      {selectedChallenge && (
+      {selectedOpportunity && (
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"
-          onClick={() => setSelectedChallenge(null)}
+          onClick={() => setSelectedOpportunity(null)}
         >
           <motion.div 
-            className={`bg-gradient-to-br ${selectedChallenge.color} rounded-3xl p-8 max-w-md w-full`}
+            className={`bg-gradient-to-br ${selectedOpportunity.color} rounded-3xl p-8 max-w-md w-full`}
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
-            <h2 className="text-4xl font-bold mb-4">{selectedChallenge.title}</h2>
-            <p className="text-xl mb-6">{selectedChallenge.description}</p>
+            <h2 className="text-4xl font-bold mb-4">{selectedOpportunity.title}</h2>
+            <p className="text-xl mb-6">{selectedOpportunity.description}</p>
           </motion.div>
         </motion.div>
       )}
@@ -177,4 +265,4 @@ const GenZEntrepreneurPlatform = () => {
   );
 };
 
-export default GenZEntrepreneurPlatform;
+export default EntrepreneurPlatform;
