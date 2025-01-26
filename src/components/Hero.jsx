@@ -630,7 +630,7 @@
 
 
 import  { useState } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { 
   Globe, 
@@ -683,7 +683,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center px-4 md:px-8 py-16 bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden">
+    <div id='hero'  className="relative min-h-screen w-full flex items-center justify-center px-4 md:px-8 py-16 bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
           Unleash Your Entrepreneurial Potential

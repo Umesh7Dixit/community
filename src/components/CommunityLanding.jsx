@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import  { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaXmark, FaBars, FaWhatsapp } from "react-icons/fa6";
 import { Check } from 'lucide-react';
@@ -194,7 +194,7 @@ const CommunityLanding = () => {
       </section>
 
       {/* Image Gallery */}
-      <section 
+      {/* <section 
         ref={eventsRef} 
         id="events" 
         className="py-16 bg-white"
@@ -227,7 +227,50 @@ const CommunityLanding = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+<section 
+  ref={eventsRef} 
+  id="events" 
+  className="py-16 bg-white"
+>
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      Community Events
+    </h2>
+    
+    <div className="grid md:grid-cols-3 gap-8">
+      {images.map((image, index) => (
+        <div 
+          key={index} 
+          className={`relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 
+            ${activeImage === index ? 'scale-105 shadow-2xl' : 'scale-100 opacity-90 hover:scale-105 hover:shadow-lg'}`}
+          onClick={() => setActiveImage(index)}
+        >
+          {/* Image */}
+          <img 
+            src={image.src} 
+            alt={image.alt} 
+            className="w-full h-64 object-cover"
+          />
+          
+          {/* Overlay Content */}
+          <div 
+            className="absolute inset-0 bg-black/50 flex items-end p-6 text-white opacity-0 
+              hover:opacity-100 transition-opacity duration-300"
+          >
+            <div>
+              <h3 className="text-xl font-bold">{image.title}</h3>
+              <p className="text-sm">{image.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Pricing Section */}
       <section 
