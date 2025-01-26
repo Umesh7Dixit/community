@@ -34,7 +34,7 @@ import Footer from './components/Footer';
 import Featires0 from './components/Featires0';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import CommunityLanding from './components/CommunityLanding'; // Import CommunityLanding component
-import CommunityStats from './components/CommunityStats';
+// import CommunityStats from './components/CommunityStats';
 import KPISection from './components/KPISection';
 
 const App = () => {

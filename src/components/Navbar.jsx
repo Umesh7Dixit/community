@@ -623,9 +623,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { Menu, X, Users } from 'lucide-react';
 import commLogo from '../assets/commLogo.jpg';
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate('/community-landing'); // Navigate to home page
+  };
+  
 
   const navItems = [
     { link: 'Home', path: 'hero' },
@@ -676,6 +684,8 @@ const Navbar = () => {
           className="flex items-center bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition-all group"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={handleHomeClick}
+
         >
           <Users className="mr-2 group-hover:rotate-6 transition-transform" size={18} />
           Join Community

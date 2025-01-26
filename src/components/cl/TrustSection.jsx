@@ -220,12 +220,121 @@
 
 
 
-import  { useState } from 'react';
+// ____________________________main_________________________________________
+
+// import  { useState } from 'react';
+// import { 
+//   Rocket, 
+//   Globe, 
+//   Layers, 
+//   Network 
+// } from 'lucide-react';
+
+// const InnovationSection = () => {
+//   const [activeCard, setActiveCard] = useState(null);
+
+//   const innovationCards = [
+//     {
+//       icon: Rocket,
+//       title: "Accelerate Growth",
+//       description: "Unlock potential through strategic mentorship and rapid scaling techniques.",
+//       color: "from-purple-500 to-indigo-600"
+//     },
+//     {
+//       icon: Globe,
+//       title: "Global Connections",
+//       description: "Build international networks across diverse industries and markets.",
+//       color: "from-blue-500 to-cyan-600"
+//     },
+//     {
+//       icon: Layers,
+//       title: "Multi-Tier Learning",
+//       description: "Access curated resources, workshops, and exclusive knowledge streams.",
+//       color: "from-green-500 to-emerald-600"
+//     },
+//     {
+//       icon: Network,
+//       title: "Collaborative Ecosystem",
+//       description: "Engage in collaborative projects and transform ideas into reality.",
+//       color: "from-pink-500 to-rose-600"
+//     }
+//   ];
+
+//   return (
+//     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+//       <div className="container mx-auto px-4">
+//         <div className="text-center mb-16">
+//           <span className="inline-block mb-4 bg-gradient-to-r from-purple-100 to-pink-100 px-4 py-1 rounded-full text-sm font-medium text-purple-700">
+//             Elevate Your Potential
+//           </span>
+          
+//           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+//             Transform Your Professional Journey
+//           </h2>
+          
+//           <p className="max-w-2xl mx-auto text-xl text-gray-600">
+//             Strategic networking and growth through an intelligent, dynamic community.
+//           </p>
+//         </div>
+
+//         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+//           {innovationCards.map((card, index) => (
+//             <div 
+//               key={index}
+//               className={`
+//                 group relative overflow-hidden rounded-3xl p-6 
+//                 transform transition-all duration-300
+//                 ${activeCard === index 
+//                   ? 'scale-105 shadow-2xl' 
+//                   : 'hover:scale-105 shadow-lg'}
+//               `}
+//               onMouseEnter={() => setActiveCard(index)}
+//               onMouseLeave={() => setActiveCard(null)}
+//             >
+//               <div className={`
+//                 absolute inset-0 bg-gradient-to-br ${card.color} 
+//                 opacity-10 group-hover:opacity-20 transition-opacity
+//               `} />
+              
+//               <div className="relative z-10">
+//                 <div className="mb-4 flex items-center justify-between">
+//                   <div className={`
+//                     p-3 rounded-xl bg-gradient-to-br ${card.color} 
+//                     bg-opacity-20 text-white
+//                   `}>
+//                     <card.icon className="w-6 h-6" />
+//                   </div>
+//                 </div>
+                
+//                 <h3 className="text-xl font-bold mb-3 text-gray-800">
+//                   {card.title}
+//                 </h3>
+                
+//                 <p className="text-gray-600 h-24 overflow-hidden">
+//                   {card.description}
+//                 </p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+        
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default InnovationSection;
+
+
+
+
+import { useState } from 'react';
 import { 
-  Rocket, 
-  Globe, 
-  Layers, 
-  Network 
+  Banknote, 
+  Briefcase, 
+  CalendarDays, 
+  GraduationCap 
 } from 'lucide-react';
 
 const InnovationSection = () => {
@@ -233,27 +342,27 @@ const InnovationSection = () => {
 
   const innovationCards = [
     {
-      icon: Rocket,
-      title: "Accelerate Growth",
-      description: "Unlock potential through strategic mentorship and rapid scaling techniques.",
+      icon: Banknote,
+      title: "Investment Opportunities",
+      description: "Discover exciting investment ventures to grow your wealth strategically.",
       color: "from-purple-500 to-indigo-600"
     },
     {
-      icon: Globe,
-      title: "Global Connections",
-      description: "Build international networks across diverse industries and markets.",
+      icon: Briefcase,
+      title: "Genuine Leads for Jobs",
+      description: "Connect with verified job leads tailored to your skills and expertise.",
       color: "from-blue-500 to-cyan-600"
     },
     {
-      icon: Layers,
-      title: "Multi-Tier Learning",
-      description: "Access curated resources, workshops, and exclusive knowledge streams.",
+      icon: CalendarDays,
+      title: "Access to Monthly Free Events",
+      description: "Attend exclusive monthly events to expand your network and learn from experts.",
       color: "from-green-500 to-emerald-600"
     },
     {
-      icon: Network,
-      title: "Collaborative Ecosystem",
-      description: "Engage in collaborative projects and transform ideas into reality.",
+      icon: GraduationCap,
+      title: "Skill Development Workshops",
+      description: "Participate in hands-on workshops to enhance your professional skillset.",
       color: "from-pink-500 to-rose-600"
     }
   ];
@@ -315,8 +424,23 @@ const InnovationSection = () => {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+};
 
-        <div className="mt-16 text-center">
+export default InnovationSection;
+
+
+
+
+
+
+// ___________________________________________________________________________________
+
+
+
+{/* <div className="mt-16 text-center">
           <a 
             href="#join" 
             className="
@@ -330,10 +454,4 @@ const InnovationSection = () => {
           >
             Join Community
           </a>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default InnovationSection;
+        </div> */}
