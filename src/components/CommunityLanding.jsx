@@ -316,7 +316,7 @@ const CommunityLanding = () => {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-4">CREOVIBE</h3>
           <p className="mb-6">Connect. Grow. Succeed.</p>
-          <p className="mt-6 text-sm">&copy; 2025 10Xclub. All Rights Reserved.</p>
+          <p className="mt-6 text-sm">&copy; 2025 CREOVIBE. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
