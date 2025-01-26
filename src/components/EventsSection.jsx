@@ -278,14 +278,14 @@ const EventsSection = () => {
     {
       id: 1,
       title: "Web Development Workshop",
-      date: "Jan 15, 2024",
+      date: "Jan 15, 2025",
       description: "Deep dive into modern web technologies and frameworks.",
       location: "Tech Hub, Silicon Valley",
     },
     {
       id: 2,
       title: "Entrepreneurship Meet",
-      date: "Feb 20, 2024",
+      date: "Feb 20, 2025",
       description: "Network with successful entrepreneurs and investors.",
       location: "Innovation Center, San Francisco",
     },
