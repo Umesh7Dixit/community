@@ -48,7 +48,7 @@ const PaymentOrder = () => {
 
           {/* Payment Instructions */}
           <div className="text-center text-gray-600">
-            <p className="mb-4">Once payment is complete, you'll gain immediate access to all community features.</p>
+            <p className="mb-4">Once payment is complete, you'll gain immediate access to CREOVIBE community.</p>
             <p className="text-sm text-gray-500">For any issues, contact our support team for assistance.</p>
           </div>
         </div>

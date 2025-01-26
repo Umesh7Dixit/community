@@ -243,11 +243,18 @@ const CommunityLanding = () => {
         💥 Elevate Your Entrepreneurial Journey for Just ₹149! 💥
       </h1>
       <p className="text-gray-600 text-lg mt-4">
-        Taking the first step is always the hardest—but isn’t ₹149 worth the risk for your dreams?  
-        Invest in yourself today and unlock premium content designed to challenge your mindset, sharpen your skills, and give you the edge you need to succeed.
+        {/* Taking the first step is always the hardest—but isn’t ₹149 worth the risk for your dreams?  
+        Invest in yourself today and unlock premium content designed to challenge your mindset, sharpen your skills, and give you the edge you need to succeed. */}
+      
+      Taking the first step toward entrepreneurship is always the hardest—but isn’t ₹149 a small investment for your big dreams? Invest in yourself today to access premium content that will reshape your entrepreneurial mindset, enhance your skills, and equip you with the tools needed to build and grow your business.
+
+{/* Opportunities like this are rare—embrace the challenge, take the leap, and start your journey toward success! */}
+      
       </p>
       <p className="text-gray-600 text-lg mt-3">
-        Opportunities like this don’t come twice—take the leap!
+        {/* Opportunities like this don’t come twice—take the leap! */}
+        Opportunities like this are rare—embrace the challenge, take the leap, and start your journey toward success!
+
       </p>
     </div>  
 
