@@ -38,7 +38,7 @@ const CommunityLanding = () => {
     navigate('/'); // Navigate to home page
   };
   const handlePaymentClick = () => {
-    navigate('/payment'); // Navigate to home page
+    navigate('/PaymentOrder'); // Navigate to home page
   };
 
   const navItems = [

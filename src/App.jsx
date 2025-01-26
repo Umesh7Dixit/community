@@ -37,7 +37,7 @@ const App = () => {
             </> 
           }/> 
           <Route path="/community-landing" element={<CommunityLanding />} />
-          <Route path="/payment" element={<Payment />} />
+          <Route path="/PaymentOrder" element={<PaymentOrder />} />
         </Routes>
       </div>
     </Router>

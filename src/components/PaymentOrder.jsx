@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { Check } from 'lucide-react';
 import qrCodeImage from '../assets/paymentQR.jpg';  // Replace with your QR code image
 
-const Payment = () => {
+const PaymentOrder = () => {
 
   const [showPayment, setShowPayment] = useState(false);
 
@@ -78,4 +78,4 @@ const Payment = () => {
   );
 };
 
-export default Payment;
+export default PaymentOrder;
