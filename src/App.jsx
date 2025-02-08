@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CommunityLanding from './components/CommunityLanding'; // Import CommunityLanding component
 // import CommunityStats from './components/CommunityStats';
 import KPISection from './components/KPISection';
-import EventsSection from './components/EventsSection';
+// import EventsSection from './components/EventsSection';
 import FounderSection from './components/FounderSection';
 import PaymentOrder from './components/PaymentOrder';
 import GenZEntrepreneurPlatform from './components/GenZEntrepreneurPlatform';
@@ -27,11 +27,11 @@ const App = () => {
               <GenZEntrepreneurPlatform/>
               {/* <Features /> */}
               
-                    <EventsSection />
+                    {/* <EventsSection /> */}
+              <Whatsapp />
                     <FounderSection />
               {/* <CommunityStats/> */}
               <KPISection/>
-              <Whatsapp />
               <Contact />
               <Footer/>
             </> 
